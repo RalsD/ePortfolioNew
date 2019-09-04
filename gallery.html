@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./styles/gallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="./libs/jquery-3.4.1.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="./libs/jquery.csv.js"></script>
+    <script src="./scripts/gallery.js"></script>
+    <script src="./scripts/java.js"></script>
+    <title>Gallery</title>
+</head>
+
+<body>
+    <nav class="topnav" id="myTopnav">
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./cakes.html">Cakes</a>
+        <a href="./paintings.html">Paintings</a>
+        <a href="./gallery.html" class="active">Gallery</a>
+        <a href="./contact.html">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="burgerMenu()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+
+    <section class="main">
+        <!--Div container that holds the carousel -->
+        <div class="container" align="center">
+            <!-- Carousel will be populated from a csv file-->
+            <div id="myCarousel" class="carousel slide" data-ride="carousel" style="width:50%;">
+                <!-- Indicators list will be generated from the gallery.js-->
+                <ol class="carousel-indicators" id="indicator-list">
+
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <br><br>
+        <h3>Rali's Web Corner</h3><br><br>
+        <a href="https://www.linkedin.com/in/ralitsa-dobreva-7298a1101/?originalSubdomain=ie" target="_blank"><img class="social-icon" src="./images/PNGs/linked.png"></a>
+        <a href=""><img class="social-icon" src="./images/PNGs/youtube1.png"></a>
+        <a href="https://www.facebook.com/ralitsa.dobreva2" target="_blank"> <img class="social-icon" src="./images/PNGs/facebook.png"></a>
+        <a href=""><img class="social-icon" src="./images/PNGs/pin.png"></a>
+        <a href=""><img class="social-icon" src="./images/PNGs/skype.png"></a>
+    </footer>
+</body>
+
+</html>

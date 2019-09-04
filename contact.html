@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./libs/jquery-3.4.1.js"></script>
+    <script src="./libs/jquery.csv.js"></script>
+    <script src="./scripts/jQuery.js"></script>
+    <script src="./scripts/java.js"></script>
+    <title>Contact Me Page</title>
+</head>
+
+<body>
+    <nav class="topnav" id="myTopnav">
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./cakes.html">Cakes</a>
+        <a href="./paintings.html">Paintings</a>
+        <a href="./gallery.html">Gallery</a>
+        <a href="./contact.html" class="active">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="burgerMenu()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+    <header>
+        <br><br><br><br>
+        <h1 class="overlay">Get In Touch! :)</h1><br>
+    </header>
+    <section id="section-contact">
+        <br><br>
+        <h2 id="text1">Get in touch! Send me a message:</h2>
+
+        <form id="form-mail" action="mailto:rally_sl@abv.bg" method="post" enctype="text/plain">
+            Name:<br>
+            <input type="text" name="name" id="user-name" required><br> E-mail:
+            <br>
+            <input type="text" name="email" id="email" required><br> Message:
+            <br>
+            <input type="text" name="message" size="50" id="messageText" required><br><br>
+            <input type="submit" value="Send">
+            <!-- onclick="SubmitForm()"-->
+            <input type="reset" value="Reset">
+        </form>
+        <h2 id="message-mail"></h2>
+        <br><br><br>
+        <table>
+            <th>Contact Details:</th>
+            <th>Map</th>
+            <tr>
+                <td>
+                    Dundalk, Co.Louth<br> Email: rally_sl@abv.bg
+                </td>
+                <td>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2345.2813182435875!2d-6.382196283960569!3d53.99778203341649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4860cc26f1b4f2d3%3A0x7794d2bbeb48f5e1!2sRSTC+Regional+Skills+%26+Training+Centre!5e0!3m2!1sen!2sie!4v1560851883308!5m2!1sen!2sie">
+
+                    </iframe>
+                </td>
+            </tr>
+        </table><br>
+    </section>
+    <footer>
+        <br><br>
+        <h3>Rali's Web Corner</h3><br><br>
+        <a href="https://www.linkedin.com/in/ralitsa-dobreva-7298a1101/?originalSubdomain=ie" target="_blank"><img class="social-icon" src="./images/PNGs/linked.png"></a>
+        <a href=""><img class="social-icon" src="./images/PNGs/youtube1.png"></a>
+        <a href="https://www.facebook.com/ralitsa.dobreva2" target="_blank"> <img class="social-icon" src="./images/PNGs/facebook.png"></a>
+        <a href=""><img class="social-icon" src="./images/PNGs/pin.png"></a>
+        <a href=""><img class="social-icon" src="./images/PNGs/skype.png"></a>
+    </footer>
+</body>
+
+</html>

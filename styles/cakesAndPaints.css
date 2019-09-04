@@ -1,0 +1,201 @@
+body {
+    background-image: url(".././images/back2.jpg");
+}
+
+
+/*Styling for the cake div containers*/
+
+.div-cont {
+    width: 28%;
+    height: wrap;
+    float: left;
+    background-color: rgba(252, 247, 247, 0.5);
+    margin: 20px;
+    padding: 10px;
+    text-align: left;
+}
+
+
+/*Styling for the painting div containers*/
+
+.div-container {
+    width: 30%;
+    height: wrap;
+    float: left;
+    background-color: rgba(252, 247, 247, 0.5);
+    margin-left: 20px;
+    margin-bottom: 40px;
+    padding: 10px;
+    text-align: center;
+}
+
+
+/*Styling for the image of the painting*/
+
+.paintings-image {
+    width: 65%;
+    height: auto;
+    margin: auto;
+}
+
+
+/*Styling for the sections that hold the cake/painting div containers*/
+
+#cakes-container,
+#paintings-container {
+    margin-top: 100px;
+    width: 100%;
+    height: wrap;
+    margin-bottom: 170px;
+}
+
+
+/*Styling for the sections on the individual cake pages, holding the detailed information for the cakes*/
+
+.article-section {
+    width: 100%;
+    background-color: rgba(252, 247, 247, 0.5);
+    margin-top: 55px;
+    margin-right: 0;
+    display: block;
+    overflow: hidden;
+}
+
+
+/*Styling the article's images on the Cake Decoration page*/
+
+.article-image {
+    width: 35%;
+    height: auto;
+    margin: 10%;
+}
+
+
+/*Styling image on the individual cake pages*/
+
+.article-image-large {
+    width: 40%;
+    margin: 80px;
+    float: left;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+iframe {
+    margin: 20px;
+}
+
+h3 {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 20px;
+}
+
+
+/* The black trasparant background */
+
+.div-pop-up {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 80px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+
+/* Popping up image  */
+
+.image-pop-up {
+    margin: auto;
+    display: block;
+    width: auto;
+    max-width: auto;
+    height: 85%;
+}
+
+
+/* The Close Button */
+
+.x-pop {
+    position: absolute;
+    top: 100px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+
+/*Changing the color of the closing icon on focus and hovering over*/
+
+.x-pop:hover,
+.x-pop:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+table {
+    margin: auto;
+    text-align: left;
+}
+
+td {
+    width: 40%;
+    margin: 20%;
+}
+
+footer {
+    clear: both;
+}
+
+
+/* 100% Image Width on Smaller Screens */
+
+@media only screen and (max-width: 700px) {
+    .image-pop-up {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+/*Stylling of elements when max width of screens is 600px*/
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 30px;
+    }
+    .div-cont,
+    .div-container {
+        width: 80%;
+        margin: 5%;
+    }
+    .paintings-image {
+        width: 95%;
+    }
+    #cakes-container,
+    painings-container {
+        margin-top: 20%;
+    }
+    iframe {
+        flex-direction: column;
+        width: 80%;
+        height: auto;
+    }
+    .article-image-large {
+        width: 80%;
+        height: auto;
+        margin: 10%;
+    }
+}

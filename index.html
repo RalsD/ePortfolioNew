@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./libs/jquery-3.4.1.js"></script>
+    <script src="./scripts/jQuery.js"></script>
+    <script src="./scripts/java.js"></script>
+    <title>Rali's Home Page</title>
+</head>
+
+<body>
+    <nav class="topnav" id="myTopnav">
+        <a href="./index.html" class="active">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./cakes.html">Cakes</a>
+        <a href="./paintings.html">Paintings</a>
+        <a href="./gallery.html">Gallery</a>
+        <a href="./contact.html">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="burgerMenu()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+    <header>
+        <br><br><br><br>
+        <h1 class="overlay">Rali's Web Corner</h1><br>
+    </header>
+    <section class="white">
+        <br>
+        <BR><br><br>
+        <h2>Want to know who I am? - Check out my <span style="text-decoration: wavy; font-style: italic; color:deeppink" class="overlay"> InterActiveE </span> Web resume:</h2>
+        <a href="./about.html"><img class="svg-s" src="./images/SVGs/cv.svg"></a>
+
+    </section>
+    <section class="white">
+        <div class="first-div1">
+            <h2>My cakes</h2>
+            <p>
+                Cake decorationg is a great way to express your creative nature!<br> Look at my attemps and get some ussefull tips too!
+                <br>
+                <a href="./cakes.html"><img class="svg-s" src="./images/SVGs/undraw_birthday_cake_7df8.svg"></a>
+            </p>
+        </div>
+        <div class="second-div1">
+            <br>
+            <a href="./cakes.html"><img class="homeImg" src="./images/Belle.jpg" alt="Belle cake" /></a>
+        </div>
+    </section>
+    <section class="pink">
+        <div class="first-div">
+            <h2>My paintings</h2>
+            <p>
+                I love to paint - it's actually really easy and anyone can do it! You can find a massive amount of instruction videos that show you step by step how the magic happens!
+            </p>
+        </div>
+        <div class="second-div">
+            <br>
+            <a href="./paintings.html"><img class="svg-s" src="./images/SVGs/undraw_making_art_759c.svg"></a>
+
+        </div>
+
+    </section>
+    <section class="pink">
+        <br><br>
+
+        <blockquote>
+            <p>
+                "To practice any art, no matter how well or badly, is a way to make your soul grow. So do it!"
+                <br>
+                <span class="author">Kurt Vonnegut</span>
+            </p>
+        </blockquote>
+
+
+    </section>
+    <section class="pink">
+        <div class="first-div">
+            <a href="./gallery.html"><img class="homeImg" src="./images/Poppy.jpg" alt="Poppies" /></a>
+        </div>
+        <div class="second-div">
+
+            <h2>Gallery</h2>
+            <p>
+                Check out some photographs of my cake decoration projects and some of my paintings.
+                <br><br><br>
+            </p>
+            <a href="./gallery.html"><img class="svg-s" src="./images/SVGs/undraw_camera_mg5h.svg"></a>
+        </div>
+    </section>
+    <section class="pink">
+        <br>
+        <p>
+            <h2 style="margin-bottom: 1px">Get in touch!:) </h2>
+            <a href="./contact.html"><img class="svg-s" src="./images/mail.png"></a>
+        </p>
+    </section>
+    <section id="spread">
+
+        <br><br> <br><br>
+        <blockquote>
+
+            <h2> "The world always seems brighter when you've just made something that wasn't there before!"</h2>
+            <br>
+            <span class="author">Neil Gaiman</span>
+
+        </blockquote>
+    </section>
+
+    <footer>
+        <br><br>
+        <h3>Rali's Web Corner</h3><br><br>
+        <a href="https://www.linkedin.com/in/ralitsa-dobreva-7298a1101/?originalSubdomain=ie" target="_blank"><img class="social-icon" src="./images/PNGs/linked.png"></a>
+        <a href=""><img class="social-icon" src="./images/PNGs/youtube1.png"></a>
+        <a href="https://www.facebook.com/ralitsa.dobreva2" target="_blank"> <img class="social-icon" src="./images/PNGs/facebook.png"></a>
+        <a href=""><img class="social-icon" src="./images/PNGs/pin.png"></a>
+        <a href=""><img class="social-icon" src="./images/PNGs/skype.png"></a>
+    </footer>
+
+    <!-- Service Worker registering -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/sw.js').then(function() {
+                console.log("Service Worker Registered");
+            });
+        }
+    </script>
+
+</body>
+
+</html>

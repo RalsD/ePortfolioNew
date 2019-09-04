@@ -1,0 +1,156 @@
+body {
+    background-image: url(".././images/back.jpg");
+}
+
+section {
+    height: wrap;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    padding-top: 20px;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    font-style: italic;
+    font-size: 76px;
+    color: rgb(0, 0, 0, 0.5);
+}
+
+
+/*Left secton of the About page*/
+
+#aboutOne {
+    background-color: #fff;
+    text-align: center;
+    margin: 0;
+    width: 30%;
+    height: 100%;
+    flex: 1;
+    border-right: 1px solid black;
+    padding: 0;
+}
+
+
+/*Right secton of the About page*/
+
+#aboutTwo {
+    background-color: #fff;
+    margin: 0;
+    width: 69%;
+    height: 100%;
+    text-align: left;
+    padding-left: 25px;
+    flex: 3;
+    border-right: 1px solid black;
+}
+
+
+/*Styling of the outher and inner lists*/
+
+li.inner-list {
+    list-style-type: circle;
+    list-style-position: inside;
+}
+
+li {
+    list-style-type: none;
+    padding: 20px;
+    background-color: lightgrey;
+    border-radius: 5%;
+    margin-right: 10%;
+}
+
+
+/*Assigning an image for each of the list items*/
+
+li#edu1 {
+    list-style-image: url(".././images/PNGs/education2.png");
+    list-style-position: inside;
+}
+
+li#edu2 {
+    list-style-image: url(".././images/PNGs/work2.png");
+    list-style-position: inside;
+}
+
+li#edu3 {
+    list-style-image: url(".././images/PNGs/hobbies2.png");
+    list-style-position: inside;
+}
+
+li#edu4 {
+    list-style-image: url(".././images/PNGs/goals2.png");
+    list-style-position: inside;
+}
+
+
+/*Styling the audio button*/
+
+audio {
+    size: 300px;
+    margin: 0%;
+}
+
+footer {
+    border: none;
+    background-color: #fff;
+    display: block;
+    width: 100%;
+    height: 60%;
+    margin: 0;
+}
+
+
+/*Styling the CV icon*/
+
+#CVicon {
+    width: 40%;
+    height: auto;
+    border-radius: 10%;
+    margin: 5% 5% 5% 5%;
+}
+
+
+/*Styling settings for screens with max width of 1200px*/
+
+@media screen and (max-width: 1200px) {
+    #CVicon {
+        height: auto;
+        width: 35%;
+    }
+}
+
+
+/*Styling settings for screens with max width of 750px*/
+
+@media screen and (max-width: 750px) {
+    #CVicon {
+        height: auto;
+        width: 35%;
+    }
+    #aboutOne,
+    #aboutTwo {
+        width: 100%;
+        height: auto;
+        border-right: none;
+        border-bottom: 1px solid black;
+        text-align: center;
+        padding: 0;
+        margin-right: 0;
+    }
+    /*The header(id=one) and the section(id=two) should colapse one after the other*/
+    #one {
+        width: 100%;
+        height: 300px;
+        margin-top: 0%;
+        background-color: #fff;
+    }
+    #two {
+        flex-direction: column;
+    }
+}

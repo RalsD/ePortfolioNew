@@ -1,0 +1,139 @@
+body {
+    background-image: url(".././images/back2.jpg");
+}
+
+
+/*Styling the pink section*/
+
+.pink {
+    height: 50%;
+    width: 100%;
+    margin: 0;
+    background-color: rgb(252, 214, 220);
+    border: none;
+    border-top: 2px solid rgb(252, 214, 220);
+}
+
+
+/*Styling the div that is on the left side of a pink section*/
+
+.first-div {
+    background-color: #fff;
+    margin: 0;
+    width: 50%;
+    height: 100%;
+    border-bottom-right-radius: 25%;
+    float: left;
+}
+
+
+/*Styling the div that is on the right side of a pink section*/
+
+.second-div {
+    background-color: #fff;
+    margin: 0;
+    width: 50%;
+    height: 100%;
+    border-bottom-left-radius: 25%;
+    float: left;
+}
+
+
+/*Styling the div that is on the left side of a white section*/
+
+.first-div1 {
+    background-color: rgb(252, 214, 220);
+    margin: 0;
+    width: 50%;
+    height: 100%;
+    border-top-right-radius: 25%;
+    float: left;
+}
+
+
+/*Styling the div that is on the right side of a white section*/
+
+.second-div1 {
+    background-color: rgb(252, 214, 220);
+    margin: 0;
+    width: 50%;
+    height: 100%;
+    border-top-left-radius: 25%;
+    float: left;
+}
+
+h2 {
+    color: black;
+    text-shadow: 2px 2px 4px gray;
+    font-size: 30px;
+    font-style: italic;
+}
+
+p {
+    font-size: 20px;
+}
+
+
+/*Styling the section that holds a quote and has a fixed background*/
+
+section#spread {
+    background-image: url(".././images/back.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 50%;
+}
+
+img {
+    width: auto;
+    height: 50%;
+    border-radius: 10%;
+    margin: 5%;
+}
+
+
+/*Styling of the small svg images */
+
+.svg-s {
+    width: 100px;
+    height: auto;
+}
+
+blockquote {
+    font-size: 28px;
+    font-style: italic;
+}
+
+
+/*Styling the way the author of the quote looks*/
+
+.author {
+    font-size: 20px;
+    font-style: italic;
+}
+
+footer {
+    background-color: #fff;
+}
+
+
+/*Styling the page when max width of the screen is 600px*/
+
+@media screen and (max-width: 600px) {
+    .social-icon {
+        width: 30px;
+        height: auto;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    .homeImg {
+        width: 50%;
+        height: auto;
+    }
+    p {
+        font-size: 15px;
+    }
+}

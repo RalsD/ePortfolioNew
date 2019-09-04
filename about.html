@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./libs/jquery-3.4.1.js"></script>
+    <script src="./libs/jquery.csv.js"></script>
+    <script src="./scripts/jQuery.js"></script>
+    <script src="./scripts/java.js"></script>
+    <title>About Page</title>
+</head>
+
+<body>
+    <nav class="topnav" id="myTopnav">
+        <a href="./index.html">Home</a>
+        <a href="./about.html" class="active">About</a>
+        <a href="./cakes.html">Cakes</a>
+        <a href="./paintings.html">Paintings</a>
+        <a href="./gallery.html">Gallery</a>
+        <a href="./contact.html">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="burgerMenu()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+    <header id="one">
+        <br><br><br><br>
+        <h1 class="overlay">Web Resume</h1><br>
+    </header>
+    <section class="whitePage" id="two">
+         <!-- The Left section of the About page content starts here -->
+        <div id="aboutOne">
+            
+            <img src="./images/PNGs/undraw_online_resume_qyys.png" alt="Resume Icon" id="CVicon">
+            <br>
+            <h2>RESUME</h2><br>
+           
+            <br><br>
+            <ul>
+                <li>My name is: Ralitsa Dobreva</li>
+                <li><button onclick="playAudio()" type="button">Listen to how it sounds</button>
+                    <audio id="audioName">
+                      <source src="./csv/nameRali519560704.mp3" type="audio/mpeg">
+                       Your browser does not support the audio tag.
+                    </audio>
+                </li>
+                <li>Email address: rally_sl@abv.bg
+                </li>
+                <li>Location:<a href="https://www.google.ie/maps/place/Dundalk,+Co.+Louth/@53.9977396,-6.4639744,12z/data=!3m1!4b1!4m5!3m4!1s0x4860cc1fa4c86acb:0xa00c7a997317490!8m2!3d53.9979451!4d-6.405957" target="_blank">Dundalk, IRELAND</a></li>
+            </ul>
+            <!--The text that will go into this paragraph will appear gradually using a web worker-->
+            <p>
+                <input type="button" value="Cool Quote ;)" onclick="websteros()" title="Click me!">
+                <br>
+                <h3><output id="wwText"></output></h3>
+                <br>
+
+                <!--<input type="button" value="Stop" onclick="stopWorker()"> -->
+
+            </p>
+        </div>
+         <!-- The Right section of the About page content starts here -->
+        <div id="aboutTwo">
+            <ul id="cvList" class="inner-list">
+                <li id="edu1" class="cv-icons"> Education</li>
+                <ul id="education1">
+                    <li class="inner-list">March 2019 - Present : ICT Systems Software Developer Course - <span>FIT/Oiliuna</span></li>
+                    <li class="inner-list">2004 - 2008 : Bachelors Degree in Informatics -<a href="https://www.uni-sofia.bg/index.php/eng/the_university" target="_blank"><span>Sofia University St.Kliment Ohridski</span></a> </li>
+                    <li class="inner-list">1999 - 2004 : Modul: Mathematics,Informatics&English - <a href="https://www.pmg-smolyan.org/"><span>High School of Mathematics,Smolyan</span></a></li>
+                    <li class="inner-list">1992-1999 : Ivan Vazov Primary School, Smolyan</li>
+                </ul>
+
+                <li id="edu2" class="cv-icons"> Work Experience</li>
+                <ul id="education2">
+                    <li class="inner-list">March 2019 - Present : <a href="https://nebula.ie" target="_blank"><span>Nebula Innovations, Drogheda</span></a>
+                        <ul>
+                            <li>Position: Software Developer Apprentice</li>
+                        </ul>
+                    </li>
+                    <li class="inner-list">August 2009 - March 2019 : <a href="http://niallclarkeoils.com/" target="_blank"><span>Niall Clarke Oils, Dundalk</span></a>
+                        <ul>
+                            <li>Position: Deli Manager</li>
+                        </ul>
+                    </li>
+                    <li class="inner-list">May 2006 - September 2006 :<a href="http://harborfishmarket-grille.com/" target="_blank">Harbour Fish Market & Grille, Baileys Harbour, USA</a>
+                        <ul>
+                            <li>Position: Kitchen Assistant/Chef</li>
+                        </ul>
+                    </li>
+                </ul>
+                <li id="edu3" class="cv-icons"> Hobbies&Interests</li>
+                <ul id="education3">
+                    <li class="inner-list"><a href="./paintings.html" style="text-decoration: none">Painting</a></li>
+                    <li class="inner-list"><a href="./cakes.html" style="text-decoration: none">Cake-Decorating</a></li>
+                    <li class="inner-list">Traveling</li>
+                    <li class="inner-list">Photography</li>
+                </ul>
+                <li id="edu4" class="cv-icons"> Projects - a list of my GitHub Repositories</li>
+                <ul id="education4">
+                </ul>
+            </ul>
+
+
+        </div>
+
+    </section>
+    <footer>
+        <br><br>
+        <h3>Rali's Web Corner</h3><br><br>
+        <a href="https://www.linkedin.com/in/ralitsa-dobreva-7298a1101/?originalSubdomain=ie" target="_blank"><img class="social-icon" src="./images/PNGs/linked.png"></a>
+        <a href=""><img class="social-icon" src="./images/PNGs/youtube1.png"></a>
+        <a href="https://www.facebook.com/ralitsa.dobreva2" target="_blank"> <img class="social-icon" src="./images/PNGs/facebook.png"></a>
+        <a href=""><img class="social-icon" src="./images/PNGs/pin.png"></a>
+        <a href=""><img class="social-icon" src="./images/PNGs/skype.png"></a>
+    </footer>
+</body>
+
+</html>
